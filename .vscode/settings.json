@@ -1,0 +1,9 @@
+{
+  "[javascript][typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "eslint.experimental.useFlatConfig": true,
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-action.json": ["actions/*.yaml"],
+  },
+}

@@ -1,0 +1,5 @@
+node_modules/
+/actions/clippy/
+/actions/rustfmt/
+/src/actions/clippy.ts
+/src/actions/rustfmt.ts

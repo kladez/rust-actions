@@ -1,0 +1,14 @@
+name: Audit
+description: Run `cargo audit`
+
+inputs:
+  args:
+    description: Arguments to pass to `cargo audit --json`
+    default: ""
+  github_token:
+    description: GitHub API token
+    default: ${{ github.token }}
+
+runs:
+  using: node20
+  main: ../../dist/audit.js

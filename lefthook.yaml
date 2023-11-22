@@ -1,0 +1,22 @@
+skip_output:
+  - meta
+  - summary
+  - success
+  - execution
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm commitlint -- --edit {1}
+
+pre-commit:
+  parallel: true
+  commands:
+    audit:
+      run: pnpm audit
+    check:
+      run: pnpm check
+    lint:
+      run: pnpm lint .
+    build:
+      run: pnpm build && git add dist
